@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <label id="name-label" for="name"
+          >Name
+          <input type="text" id="name" required placeholder="Enter Your Name"
+        /></label>
+        <label id="email-label" for="email"
+          >Email<input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter Your Email"
+        /></label>
+        <label id="number-label" for="age"
+          >Age<input
+            type="number"
+            id="number"
+            min="17"
+            max="100"
+            placeholder="Enter Your Age"
+        /></label>
+        <label for="dropdown">
+          What Is Your Favourite Feature ?<select id="dropdown">
+            <option>Select An Option</option>
+            <option>Challanges</option>
+            <option>Projects</option>
+          </select>
+        </label>
+
+        <section id="recommending">
+          Will you recommend us to your friends ?
+        <label for="definitely"
+          ><input
+            type="radio"
+            name="recommend"
+            value="definitely"
+          />Definitely</label
+        >
+        <label for="maybe"
+          ><input type="radio" name="recommend" value="maybe" />Maybe</label
+        >
+        </section>
+        <fieldset>
+          Are you a ?
+          <label for="frontend"
+            ><input type="checkbox" value="Front End" />Front End</label
+          >
+          <label for="backend"
+            ><input type="checkbox" value="backend" />Back End</label
+          >
+          <label for="textarea">
+            <textarea placeholder="write here"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
